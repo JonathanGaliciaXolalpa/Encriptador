@@ -1,0 +1,142 @@
+h1{
+    width:120px;
+    height:48px;
+    display: inline-block;
+}
+
+#Diamante{
+    position: absolute;
+    width: 336px;
+    height: 250px;
+    left: 1000px;
+    top: 30px;
+    
+    
+}
+
+.nota{
+    position: absolute;
+    width: 336px;
+    height: 35px;
+    left: 1000px;
+    top: 285px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    
+
+}
+
+#instruccion{
+    position:absolute;
+    width: 336px;
+    height: 48px;
+    left: 1000px;
+    top: 320px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+    border: none;
+   
+    
+    
+
+    
+}
+
+#cuadroTexto{
+position: absolute;
+width: 577px;
+height: 48px;
+left: 240px;
+top: 168px;
+font-size: 32px;
+line-height: 150%;
+
+color: #0A3871;
+
+border: none;
+}
+.botones{
+    display: inline;
+    position: relative;
+    top: 400px;
+    
+}
+#boton1{
+    display: inline;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 15%;
+    top: 10px;
+}
+
+#boton2{
+    
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    color: #0A3871;
+    margin-left: 5%;
+    top: 10px;
+}
+
+#copiar{
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    left: 1000px;
+    top: 380px;
+    display:none;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    color: #0A3871;
+    /*margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    background: gray;
+    border-radius: 24px;*/
+}
+
+/*.{
+    display: contents;
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    
+
+
+}*/

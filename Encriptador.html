@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./reset.css"><!-- NOS PERMITR BORRAR TODO AQUELLO QUE NO ESTE COLOCADO CORRECTAMENTE EN NUESTRO CSS SE COLO CA ANTES DE EL REFERENCIADO DE CSS PARA QUE NO BORRE NUESTROS DATOS-->
+        <link rel="stylesheet" href="./style.css"><!-- NOS COMUNICA AL CSS PARA PODER AGREGARLE ESTILO REL DE RELATION--> 
+
+    </head>
+    <body>
+        <header>
+            <h1><img src="./imagenes/Logo.png" alt="Logo de alura"></h1>
+        </header>
+        <main>
+            
+            <form>
+                <input type="text"  id="cuadroTexto" placeholder="Ingrese el texto aqui" required>
+            </form>
+            <div>
+                <img src="./imagenes/Muñeco.jpg" id="Diamante" alt="Muñeco con diamante" >
+                <p class="nota" id = "advertencia">Ningún mensaje fue encontrado</p>
+                <textarea id ="instruccion">Ingresa el texto que deseas encriptar o desencriptar</textarea>
+                <button id="copiar" type ="button" onclick="copiar()">Copiar</button>
+            </div>
+
+        </main>
+       
+        <div class = "botones">
+            <p class="Copyrigth">&#33*Solo letras minusculas,sin acentos ni caracteres especiales*</p>
+            
+            <button type="button" class="botones" id="boton1" onclick="encriptar()">Encriptar</button>
+            <!--<input type="button" value="Encriptar" class="botones" id="boton1" onclick="encriptar()">Esta nos permite crear un boton-->
+            <!--<input type="button" value="Desencriptar" class="botones" id="boton2" >Esta nos permite crear un boton-->
+            <button type="button" class="botones" id="boton2" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+        <script>
+           
+            function encriptar(){
+                var texto = document.getElementById("cuadroTexto").value.toLowerCase();
+                var encriptado = texto.replace(/e/igm,"enter");
+                var encriptado = encriptado.replace(/i/igm,"imes");
+                var encriptado = encriptado.replace(/a/igm,"ai");
+                var encriptado = encriptado.replace(/o/igm,"ober");
+                var encriptado = encriptado.replace(/u/igm,"ufat");
+                
+                document.getElementById("Diamante").style.display = "none";
+                document.getElementById("advertencia").style.display = "none";
+                document.getElementById("instruccion").innerHTML = encriptado;
+                document.getElementById("copiar").style.display = "show";
+                document.getElementById("copiar").style.display = "inherit";
+
+
+
+
+
+
+            }
+           
+            function desencriptar(){
+                var texto = document.getElementById("cuadroTexto").value.toLowerCase();
+                var encriptado = texto.replace(/enter/igm,"e");
+                var encriptado = encriptado.replace(/imes/igm,"i");
+                var encriptado = encriptado.replace(/ai/igm,"a");
+                var encriptado = encriptado.replace(/ober/igm,"o");
+                var encriptado = encriptado.replace(/ufat/igm,"u");
+
+                document.getElementById("Diamante").style.display = "none";
+                document.getElementById("advertencia").style.display = "none";
+                document.getElementById("instruccion").innerHTML = encriptado;
+                document.getElementById("copiar").style.display = "show";
+                document.getElementById("copiar").style.display = "inherit";
+
+            }
+            
+            function copiar(){
+                var contenido = document.querySelector("#instruccion");
+                contenido.select();
+                document.execCommand("copy");
+                alert("Se ha copiado tu texto");
+
+            }
+
+            /*var texto = document.querySelector("input");
+            function desencriptar(){
+                
+                var encriptado =texto.replace(/e/g,"enter");
+                var encriptado =texto.replace(/i/g,"imes");
+                var encriptado =texto.replace(/a/g,"ai");
+                var encriptado =texto.replace(/o/g,"ober");
+                var encriptado =texto.replace(/u/g,"ufat");
+
+
+
+            }
+            var button = document.querySelector("button");
+            button.onclick = desencriptar;
+            */
+
+
+        </script>
+    </body>
+</html>
