@@ -140,3 +140,41 @@ border: none;
 
 
 }*/
+
+@media screen and (max-width:480px){
+
+    /*h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja,.principal,.mapaContenido,.contenidoDiferenciales,.video{
+        width: auto;
+    }
+    
+    .listaDiferenciales{
+        width: auto;
+        display: block;
+    }*/
+
+    #Diamante{
+        width: 50%;
+    }
+
+    #boton1{
+        display: inline-block;
+        margin-left: 2.5%;
+        padding: 12 px;
+        width: auto;
+   
+    }
+
+    #boton2{
+        padding: 12px;
+        width: auto;
+        margin-left: 2.5%;
+    }
+}
