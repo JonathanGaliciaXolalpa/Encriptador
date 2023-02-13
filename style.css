@@ -169,6 +169,7 @@ border: none;
         margin-left: 2.5%;
         padding: 12 px;
         width: auto;
+        flex-wrap: wrap;
    
     }
 
@@ -177,4 +178,95 @@ border: none;
         width: auto;
         margin-left: 2.5%;
     }
+
+    #cuadroTexto{
+        position: absolute;
+        width: 185px;
+        left: 30px;
+        top: 168px;
+        font-size: 16px;
+        line-height: 150%;
+        
+        color: #0A3871;
+        
+        border: none;
+        }
+    
+        #Diamante{
+            position: absolute;
+            width: 150px;
+            height: 125px;
+            left: 220px;
+            top: 30px;
+            
+            
+        }
+
+        .nota{
+            position: absolute;
+            width: 150px;
+            height: 35px;
+            left: 220px;
+            top: 150px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 120%;
+            text-align: center;
+            color: #343A40;
+            
+        
+        }
+        
+        #instruccion{
+            position:absolute;
+            width: 150px;
+            height: 35px;
+            left: 220px;
+            top: 190px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 150%;
+            /* or 24px */
+        
+            text-align: center;
+        
+            /* Gray/gray-400 */
+        
+            color: #495057;
+            border: none;
+           
+            
+            
+        
+            
+        }
+
+        #copiar{
+            position: absolute;
+            width: 100px;
+            height: 67px;
+            left: 250px;
+            top: 230px;
+            display:none;
+            background: #D8DFE8;
+            border: 1px solid #0A3871;
+            border-radius: 24px;
+            text-align: center;
+            color: #0A3871;
+           
+            /*margin-left: 33%;
+            margin-top: 90%;
+            padding: 24px;
+            width: 40%;
+            height: 10%;
+            background: gray;
+            border-radius: 24px;*/
+        }
+
+
+    
 }
